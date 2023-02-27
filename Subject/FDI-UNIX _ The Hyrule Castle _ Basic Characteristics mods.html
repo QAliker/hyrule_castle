@@ -1,0 +1,191 @@
+<html>
+
+<head>
+  <title>FDI-UNIX / The Hyrule Castle / Basic Characteristics</title>
+  <link rel="stylesheet" href="https://dl.etna-alternance.net/sujets/prism.css">
+  <link rel="stylesheet" href="https://dl.etna-alternance.net/sujets/sujet-zelda2022.css">
+  <script type="text/javascript" src="https://dl.etna-alternance.net/sujets/prism.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
+  <script type="text/javascript" src="https://kit.fontawesome.com/2128552f47.js"></script>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <div class="panel-heading panel-header">FDI-UNIX / The Hyrule Castle / Basic Characteristics</div>
+  <div class="panel-heading panel-module">Terms and Conditions</div>
+  <div class="panel-body">
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Repository</td>
+          <td>https://rendu-git.etna-alternance.net/module-9182/activity-50203/group-991693</td>
+        </tr>
+        <tr>
+          <td>Required file</td>
+          <td>hyrule_castle.ts + any <code>.ts</code> file</td>
+        </tr>
+        <tr>
+          <td>Correction</td>
+          <td>Oral defense</td>
+        </tr>
+        <tr>
+          <td>Duration</td>
+          <td>4 days</td>
+        </tr>
+        <tr>
+          <td>Group size</td>
+          <td>Group of 2</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="panel-heading panel-objective">Objectives</div>
+  <div class="panel-body">
+    <ul>
+      <li>Apply basic TypeScript concepts through a project</li>
+      <li>Deal with game development problematics</li>
+      <li>Manage user input and its error handling</li>
+      <li>Improve your programming knowledge by building a script</li>
+      <li>Create gameplay around algorithmic and mathematic functions</li>
+    </ul>
+  </div>
+  <div class="panel-heading panel-project">Instructions</div>
+  <div class="panel-body">
+    <p>This part is about improving the character building in the game:</p>
+    <ul>
+      <li>Adding more characteristics to each playable character</li>
+      <li>Adding more custom interaction between each character</li>
+      <li>Adding RPG-like level, class and race systems</li>
+    </ul>
+  </div>
+  <div class="panel-heading panel-exercise">Basic Characteristics</div>
+  <div class="panel-body">
+    <table>
+      <thead>
+        <tr>
+          <th>Requirements</th>
+          <th>Difficulty</th>
+          <th>Mod file</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Base Game &amp; Dynamic Characters</td>
+          <td>Intermediate</td>
+          <td>basic_characteristics.ts</td>
+        </tr>
+      </tbody>
+    </table>
+    <ul>
+      <li>Add an option “Character” in the combat options.<ul>
+          <li>Displays a character file with its name, statistics, class and race (see <strong>classes.json</strong> and
+            <strong>races.json</strong>).</li>
+        </ul>
+      </li>
+    </ul>
+    <ul>
+      <li>If the character attacks a class or race it's strong against, it deals x2 damages (x4 if both the enemy's
+        class and race are weak against the character's class and race) (see <strong>Damage Modifiers</strong> section).
+      </li>
+      <li>If the character is attacked by a class or race it's weak against, it receives x2 damages (x4 if both the
+        enemy's class and race are strong against the character's class and race) (see <strong>Damage Modifiers</strong>
+        section).</li>
+      <li>If the character attacks a class or race it's weak against, it deals /2 damages (/4 if both the enemy's class
+        and race are strong against the character's class and race) (see <strong>Damage Modifiers</strong> section).
+      </li>
+      <li>If the character is attacked by a class or race it's strong against, it receives /2 damages (/4 if both the
+        enemy's class and race are weak against the character's class and race) (see <strong>Damage Modifiers</strong>
+        section).</li>
+    </ul>
+    <ul>
+      <li>A “strong” attack will be written as “Crushing hit”.</li>
+      <li>A “weak” attack will be written as “Glancing hit”.</li>
+    </ul>
+  </div>
+  <div class="panel-heading panel-exercise">Character Creation</div>
+  <div class="panel-body">
+    <table>
+      <thead>
+        <tr>
+          <th>Requirements</th>
+          <th>Difficulty</th>
+          <th>Mod file</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Basic Characteristics</td>
+          <td>Intermediate</td>
+          <td>character_creation.ts</td>
+        </tr>
+      </tbody>
+    </table>
+    <ul>
+      <li>When starting the game, the player can create its own custom character.</li>
+      <li>The player can pick a class and race out of the different options
+        in&nbsp;<strong>classes.json</strong>&nbsp;and&nbsp;<strong>races.json</strong>.</li>
+      <li>The statistics of the character can be attributed be the player. You get to decide how many maximum points the
+        player can put in the statistics.</li>
+      <li>Once the character is completed, a quick summary is displayed and the player is asked for confirmation.</li>
+    </ul>
+  </div>
+  <div class="panel-heading panel-exercise">Basic Characteristics II</div>
+  <div class="panel-body">
+    <table>
+      <thead>
+        <tr>
+          <th>Requirements</th>
+          <th>Difficulty</th>
+          <th>Mod file</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Basic Characteristics</td>
+          <td>Intermediate</td>
+          <td>basic_characteristics_2.ts</td>
+        </tr>
+      </tbody>
+    </table>
+    <ul>
+      <li>The character has a good or evil alignment based on its class (see&nbsp;<strong>classes.json</strong>).</li>
+      <li>The alignment is displayed in the character file of the “Character Option”.</li>
+      <li>The character unlocks the fighting option “Special Move”, and allows the character to use a special class
+        skill once every fight. You get to choose these skills' effects.</li>
+    </ul>
+  </div>
+  <div class="panel-heading panel-exercise">Level and Experience</div>
+  <div class="panel-body">
+    <table>
+      <thead>
+        <tr>
+          <th>Requirements</th>
+          <th>Difficulty</th>
+          <th>Mod file</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Basic Characteristics</td>
+          <td>Easy</td>
+          <td>level_and_experience.ts</td>
+        </tr>
+      </tbody>
+    </table>
+    <ul>
+      <li>The character randomly earns between 15 and 50 experience points after each victory.</li>
+      <li>The character gains a level each time it earns enough experience points. You decide of how much XP the
+        character needs to level up.</li>
+      <li>Each time the character levels up, it randomly gains statistics. You decide what statistics it gains.</li>
+    </ul>
+  </div>
+</body>
+
+</html>

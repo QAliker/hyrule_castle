@@ -1,0 +1,214 @@
+<html>
+
+<head>
+  <title>FDI-UNIX / The Hyrule Castle / Better Combat Option</title>
+  <link rel="stylesheet" href="https://dl.etna-alternance.net/sujets/prism.css">
+  <link rel="stylesheet" href="https://dl.etna-alternance.net/sujets/sujet-zelda2022.css">
+  <script type="text/javascript" src="https://dl.etna-alternance.net/sujets/prism.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
+  <script type="text/javascript" src="https://kit.fontawesome.com/2128552f47.js"></script>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <div class="panel-heading panel-header">FDI-UNIX / The Hyrule Castle / Better Combat Option</div>
+  <div class="panel-heading panel-module">Terms and Conditions</div>
+  <div class="panel-body">
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Repository</td>
+          <td>https://rendu-git.etna-alternance.net/module-9182/activity-50203/group-991693</td>
+        </tr>
+        <tr>
+          <td>Required file</td>
+          <td>hyrule_castle.ts + any <code>.ts</code> file</td>
+        </tr>
+        <tr>
+          <td>Correction</td>
+          <td>Oral defense</td>
+        </tr>
+        <tr>
+          <td>Duration</td>
+          <td>4 days</td>
+        </tr>
+        <tr>
+          <td>Group size</td>
+          <td>Group of 2</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="panel-heading panel-objective">Objectives</div>
+  <div class="panel-body">
+    <ul>
+      <li>Apply basic TypeScript concepts through a project</li>
+      <li>Deal with game development problematics</li>
+      <li>Manage user input and its error handling</li>
+      <li>Create gameplay around algorithmic and mathematic functions</li>
+    </ul>
+  </div>
+  <div class="panel-heading panel-project">Instructions</div>
+  <div class="panel-body">
+    <p>This part is about improving the combat mechanics in the game:</p>
+    <ul>
+      <li>Adding more moves or actions possible</li>
+      <li>Adding more effects or spells</li>
+      <li>Adding inventory and item management</li>
+    </ul>
+  </div>
+  <div class="panel-heading panel-exercise">Better Combat Options</div>
+  <div class="panel-body">
+    <table>
+      <thead>
+        <tr>
+          <th>Requirements</th>
+          <th>Difficulty</th>
+          <th>Mod file</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Base Game &amp; Dynamic Characters</td>
+          <td>Easy</td>
+          <td>better_combat_options.ts</td>
+        </tr>
+      </tbody>
+    </table>
+    <ul>
+      <li>The combat options must be displayed each turn</li>
+      <li>Each option can be entered with the corresponding number AND the name (case-insensitive)</li>
+      <li>The option “Escape” must be added. It stops the fight (you get to decide the repercussions of fleeing).</li>
+      <li>The option “Protect” must be added. It halves the received damage (see&nbsp;<strong>Damage
+          Modifiers</strong>&nbsp;section)</li>
+    </ul>
+  </div>
+  <div class="panel-heading panel-exercise">More Statistics</div>
+  <div class="panel-body">
+    <table>
+      <thead>
+        <tr>
+          <th>Requirements</th>
+          <th>Difficulty</th>
+          <th>Mod file</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Better Combat Options</td>
+          <td>Easy</td>
+          <td>more_statistics.ts</td>
+        </tr>
+      </tbody>
+    </table>
+    <ul>
+      <li>The&nbsp;<strong>def</strong>&nbsp;is used to reduce physical attack damage (see&nbsp;<strong>Damage
+          Modifier</strong>,&nbsp;<strong>players.json</strong>,&nbsp;<strong>enemies.json</strong>&nbsp;and&nbsp;<strong>bosses.json</strong>)
+      </li>
+      <li>The&nbsp;<strong>res</strong>&nbsp;is used to reduce magical attack damage</li>
+      <li>The&nbsp;<strong>spd</strong>&nbsp;is used to decide of the turn order. Having more speed means playing
+        before. The fastest also has a chance to dodge equal to his speed minus the opponent's speed. For instance, if
+        Link has 10 spd and his opponent 6 spd, Link will play first and will have 4% chance to dodge the enemy's
+        attacks.</li>
+      <li>The&nbsp;<strong>luck</strong>&nbsp;is used to calculate the chances of a critical strike that deals double
+        damage (see&nbsp;<strong>Damage Modifier</strong>)</li>
+    </ul>
+  </div>
+  <div class="panel-heading panel-exercise">Inventory</div>
+  <div class="panel-body">
+    <table>
+      <thead>
+        <tr>
+          <th>Requirements</th>
+          <th>Difficulty</th>
+          <th>Mod file</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Better Combat Options</td>
+          <td>Hard</td>
+          <td>inventory.ts</td>
+        </tr>
+      </tbody>
+    </table>
+    <ul>
+      <li>The player can receive a random item at the end of each fight (see&nbsp;<strong>Rarity</strong>&nbsp;section)
+      </li>
+      <li>The dropped items can be stored in an inventory</li>
+      <li>The inventory can be displayable</li>
+      <li>The items of the inventory can be consumed and removed from the inventory</li>
+    </ul>
+  </div>
+  <div class="panel-heading panel-exercise">Magic Skills</div>
+  <div class="panel-body">
+    <table>
+      <thead>
+        <tr>
+          <th>Requirements</th>
+          <th>Difficulty</th>
+          <th>Mod file</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Better Combat Options</td>
+          <td>Intermediate</td>
+          <td>magic_skills.ts</td>
+        </tr>
+      </tbody>
+    </table>
+    <ul>
+      <li>“Heal” must be replaced by “Skills” in the main combat options</li>
+      <li>“Skills” display the list of the learned skills</li>
+      <li>Each playable character can use “Cheat Heal”, “Cheat Restore” and “Cheat Fireball”</li>
+      <li>Each playable character can use its class' skills (see&nbsp;<strong>skills.json</strong>).</li>
+      <li>The “Skills” must use the&nbsp;<strong>spells.json</strong>&nbsp;to calculate mana cost and damage</li>
+      <li>The&nbsp;<strong>spells.json</strong>&nbsp;effects “Heal” and “Restore” must be coded<ul>
+          <li>The “Heal” effect heals the given amount of hp</li>
+          <li>The “Restore” effect restores the given amount of mana</li>
+        </ul>
+      </li>
+      <li>If the character doesn't have enough mana, he can't cast the spell</li>
+    </ul>
+  </div>
+  <div class="panel-heading panel-exercise">Team Combat</div>
+  <div class="panel-body">
+    <table>
+      <thead>
+        <tr>
+          <th>Requirements</th>
+          <th>Difficulty</th>
+          <th>Mod file</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Better Combat Options</td>
+          <td>Hard</td>
+          <td>team_combat.ts</td>
+        </tr>
+      </tbody>
+    </table>
+    <ul>
+      <li>The fights that were previously 1 versus 1 are now 4 versus 4</li>
+      <li>At the beginning of the game, instead of having 1 random playable character, you receive 4 random playable
+        characters<ul>
+          <li>You can't have the same character twice</li>
+        </ul>
+      </li>
+      <li>At the beginning of each non-boss fight, 4 enemies appear instead of 1</li>
+      <li>Each turn, every character gets to play and attack a specific target</li>
+      <li>Each enemy attacks a random character</li>
+    </ul>
+  </div>
+</body>
+
+</html>
